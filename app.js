@@ -2694,9 +2694,9 @@ function renderReviewGroups(prediction, entry) {
         const isThird = idx === 2;
         const isFourth = idx === 3;
         const eliminated = isFourth || (isThird && !autoThirds.has(team));
-        const statusClass = realOrder.length
+        const statusClass = !eliminated && realOrder.length
           ? getPredictionStandingReviewClass(team, idx, predOrder, autoThirds, realOrder, realThirds)
-          : ' review-pending';
+          : (!eliminated ? ' review-pending' : '');
 
         const row = document.createElement('div');
         row.className =
@@ -3349,12 +3349,12 @@ function renderReviewAwards(prediction) {
   container.innerHTML = '';
 
   const rows = [
-    [`Bota de oro (${puntuaciones.premios.goldenBoot[0]}pt)`, prediction.awards?.goldenBoot?.[0], RESULTS.awards?.goldenBoot?.[0]],
-    [`Bota de plata (${puntuaciones.premios.goldenBoot[1]}pt)`, prediction.awards?.goldenBoot?.[1], RESULTS.awards?.goldenBoot?.[1]],
-    [`Bota de bronce(${puntuaciones.premios.goldenBoot[2]}pt)`, prediction.awards?.goldenBoot?.[2], RESULTS.awards?.goldenBoot?.[2]],
-    [`Balón de oro (${puntuaciones.premios.goldenBall[0]}pt)`, prediction.awards?.goldenBall?.[0], RESULTS.awards?.goldenBall?.[0]],
-    [`Balón de plata (${puntuaciones.premios.goldenBall[1]}pt)`, prediction.awards?.goldenBall?.[1], RESULTS.awards?.goldenBall?.[1]],
-    [`Balón de bronce (${puntuaciones.premios.goldenBall[2]}pt)`, prediction.awards?.goldenBall?.[2], RESULTS.awards?.goldenBall?.[2]]
+    [`🏆 Bota de oro (${puntuaciones.premios.goldenBoot[0]}pt)`, prediction.awards?.goldenBoot?.[0], RESULTS.awards?.goldenBoot?.[0]],
+    [`🥈 Bota de plata (${puntuaciones.premios.goldenBoot[1]}pt)`, prediction.awards?.goldenBoot?.[1], RESULTS.awards?.goldenBoot?.[1]],
+    [`🥉 Bota de bronce (${puntuaciones.premios.goldenBoot[2]}pt)`, prediction.awards?.goldenBoot?.[2], RESULTS.awards?.goldenBoot?.[2]],
+    [`🏆 Balón de oro (${puntuaciones.premios.goldenBall[0]}pt)`, prediction.awards?.goldenBall?.[0], RESULTS.awards?.goldenBall?.[0]],
+    [`🥈 Balón de plata (${puntuaciones.premios.goldenBall[1]}pt)`, prediction.awards?.goldenBall?.[1], RESULTS.awards?.goldenBall?.[1]],
+    [`🥉 Balón de bronce (${puntuaciones.premios.goldenBall[2]}pt)`, prediction.awards?.goldenBall?.[2], RESULTS.awards?.goldenBall?.[2]]
   ];
 
   rows.forEach(([label, predicted, real]) => {
@@ -3371,9 +3371,18 @@ function renderReviewAwards(prediction) {
 
     row.innerHTML = `
       <label>${label}:</label>
-      <div class="award-select" style="cursor:default;">
-        ${predicted || '---'}
-        ${resolved ? `<small style="display:block;font-weight:700;">Actual: ${real}</small>` : ''}
+      <div class="award-custom award-readonly">
+        <div class="award-custom-trigger" style="cursor:default;">
+          ${awardDisplayHtml(predicted)}
+        </div>
+        ${resolved ? `
+          <small style="display:block;font-weight:700;margin-top:6px;">
+            Actual:
+            <span style="display:inline-flex;align-items:center;gap:6px;">
+              ${awardDisplayHtml(real)}
+            </span>
+          </small>
+        ` : ''}
       </div>
     `;
 
