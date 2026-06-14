@@ -24,11 +24,11 @@ const RESULTS = {
       "Qatar__Switzerland": { "home": 1, "away": 1 }
     },
     "C": {
-      "Brazil__Morocco": { "home": 1, "away": 1 },
-      "Haiti__Scotland": { "home": 0, "away": 1 }
+      "Brazil__Morocco": { "home": 1, "away": 1 }
     },
     "D": {
-      "USA__Paraguay": { "home": 4, "away": 1 }
+      "USA__Paraguay": { "home": 4, "away": 1 },
+      "Australia__Turkey": { "home": 2, "away": 0 }
     },
     "E": {},
     "F": {},
