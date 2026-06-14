@@ -15,7 +15,7 @@ const ENTRY_ID = 'entry.2070684615';
 const puntuaciones = {
   grupos: {
     partido: {
-      resultadoExacto: 2,
+      resultadoExacto: 3,
       ganadorEmpateCorrecto: 1
     },
     posicion: {
@@ -57,223 +57,425 @@ const FLAG_CODE = {
 const AWARD_PLAYERS = [
 
   // France
-  { name: 'Kylian Mbappé', country: 'France' },
-  { name: 'Ousmane Dembélé', country: 'France' },
-  { name: 'Eduardo Camavinga', country: 'France' },
-  { name: 'Aurélien Tchouaméni', country: 'France' },
-  { name: 'William Saliba', country: 'France' },
-  { name: 'Ibrahima Konaté', country: 'France' },
-  { name: 'Theo Hernández', country: 'France' },
   { name: 'Mike Maignan', country: 'France' },
-  { name: 'Marcus Thuram', country: 'France' },
-  { name: 'Michael Olise', country: 'France' },
-  { name: 'Désiré Doué', country: 'France' },
-  { name: 'Rayan Cherki', country: 'France' },
+  { name: 'Robin Risser', country: 'France' },
+  { name: 'Brice Samba', country: 'France' },
+  { name: 'Lucas Digne', country: 'France' },
+  { name: 'Malo Gusto', country: 'France' },
+  { name: 'Lucas Hernández', country: 'France' },
+  { name: 'Theo Hernández', country: 'France' },
+  { name: 'Ibrahima Konaté', country: 'France' },
+  { name: 'Jules Koundé', country: 'France' },
+  { name: 'Maxence Lacroix', country: 'France' },
+  { name: 'William Saliba', country: 'France' },
+  { name: 'Dayot Upamecano', country: 'France' },
+  { name: 'N\'Golo Kanté', country: 'France' },
+  { name: 'Manu Koné', country: 'France' },
+  { name: 'Adrien Rabiot', country: 'France' },
+  { name: 'Aurélien Tchouaméni', country: 'France' },
   { name: 'Warren Zaïre-Emery', country: 'France' },
+  { name: 'Maghnes Akliouche', country: 'France' },
   { name: 'Bradley Barcola', country: 'France' },
+  { name: 'Rayan Cherki', country: 'France' },
+  { name: 'Ousmane Dembélé', country: 'France' },
+  { name: 'Désiré Doué', country: 'France' },
   { name: 'Jean-Philippe Mateta', country: 'France' },
+  { name: 'Kylian Mbappé', country: 'France' },
+  { name: 'Michael Olise', country: 'France' },
+  { name: 'Marcus Thuram', country: 'France' },
 
   // England
-  { name: 'Jude Bellingham', country: 'England' },
-  { name: 'Harry Kane', country: 'England' },
-  { name: 'Phil Foden', country: 'England' },
-  { name: 'Bukayo Saka', country: 'England' },
-  { name: 'Cole Palmer', country: 'England' },
+  { name: 'Jordan Pickford', country: 'England' },
+  { name: 'Ezri Konsa', country: 'England' },
+  { name: 'Nico O\'Reilly', country: 'England' },
   { name: 'Declan Rice', country: 'England' },
-  { name: 'Trent Alexander-Arnold', country: 'England' },
   { name: 'John Stones', country: 'England' },
-  { name: 'Anthony Gordon', country: 'England' },
-  { name: 'Kobbie Mainoo', country: 'England' },
-  { name: 'Reece James', country: 'England' },
-  { name: 'Ollie Watkins', country: 'England' },
-  { name: 'Eberechi Eze', country: 'England' },
-  { name: 'Morgan Gibbs-White', country: 'England' },
   { name: 'Marc Guéhi', country: 'England' },
+  { name: 'Bukayo Saka', country: 'England' },
+  { name: 'Elliot Anderson', country: 'England' },
+  { name: 'Harry Kane', country: 'England' },
+  { name: 'Jude Bellingham', country: 'England' },
+  { name: 'Marcus Rashford', country: 'England' },
+  { name: 'Tino Livramento', country: 'England' },
+  { name: 'Dean Henderson', country: 'England' },
+  { name: 'Jordan Henderson', country: 'England' },
+  { name: 'Dan Burn', country: 'England' },
+  { name: 'Kobbie Mainoo', country: 'England' },
+  { name: 'Morgan Rogers', country: 'England' },
+  { name: 'Anthony Gordon', country: 'England' },
+  { name: 'Ollie Watkins', country: 'England' },
+  { name: 'Noni Madueke', country: 'England' },
+  { name: 'Eberechi Eze', country: 'England' },
+  { name: 'Ivan Toney', country: 'England' },
+  { name: 'James Trafford', country: 'England' },
+  { name: 'Reece James', country: 'England' },
+  { name: 'Djed Spence', country: 'England' },
+  { name: 'Jarell Quansah', country: 'England' },
 
   // Brazil
-  { name: 'Vinícius Júnior', country: 'Brazil' },
-  { name: 'Rodrygo', country: 'Brazil' },
-  { name: 'Raphinha', country: 'Brazil' },
-  { name: 'Endrick', country: 'Brazil' },
-  { name: 'Neymar', country: 'Brazil' },
-  { name: 'Bruno Guimarães', country: 'Brazil' },
-  { name: 'Gabriel Martinelli', country: 'Brazil' },
-  { name: 'Marquinhos', country: 'Brazil' },
+  { name: 'Alisson', country: 'Brazil' },
+  { name: 'Ederson Moraes', country: 'Brazil' },
+  { name: 'Weverton', country: 'Brazil' },
+  { name: 'Alex Sandro', country: 'Brazil' },
+  { name: 'Bremer', country: 'Brazil' },
+  { name: 'Danilo', country: 'Brazil' },
+  { name: 'Douglas Santos', country: 'Brazil' },
   { name: 'Gabriel Magalhães', country: 'Brazil' },
-  { name: 'Alisson Becker', country: 'Brazil' },
-  { name: 'João Pedro', country: 'Brazil' },
-  { name: 'Savinho', country: 'Brazil' },
-  { name: 'André', country: 'Brazil' },
-  { name: 'Murillo', country: 'Brazil' },
-  { name: 'Beraldo', country: 'Brazil' },
+  { name: 'Ibañez', country: 'Brazil' },
+  { name: 'Léo Pereira', country: 'Brazil' },
+  { name: 'Marquinhos', country: 'Brazil' },
+  { name: 'Bruno Guimarães', country: 'Brazil' },
+  { name: 'Casemiro', country: 'Brazil' },
+  { name: 'Danilo Santos', country: 'Brazil' },
+  { name: 'Fabinho', country: 'Brazil' },
+  { name: 'Lucas Paquetá', country: 'Brazil' },
+  { name: 'Ederson', country: 'Brazil' },
+  { name: 'Endrick', country: 'Brazil' },
+  { name: 'Gabriel Martinelli', country: 'Brazil' },
+  { name: 'Igor Thiago', country: 'Brazil' },
+  { name: 'Luiz Henrique', country: 'Brazil' },
+  { name: 'Matheus Cunha', country: 'Brazil' },
+  { name: 'Neymar Junior', country: 'Brazil' },
+  { name: 'Raphinha', country: 'Brazil' },
+  { name: 'Rayan', country: 'Brazil' },
+  { name: 'Vinícius Júnior', country: 'Brazil' },
 
   // Spain
-  { name: 'Lamine Yamal', country: 'Spain' },
-  { name: 'Rodri', country: 'Spain' },
-  { name: 'Pedri', country: 'Spain' },
-  { name: 'Nico Williams', country: 'Spain' },
-  { name: 'Dani Olmo', country: 'Spain' },
-  { name: 'Pau Cubarsí', country: 'Spain' },
-  { name: 'Dani Carvajal', country: 'Spain' },
-  { name: 'Álvaro Morata', country: 'Spain' },
-  { name: 'Gavi', country: 'Spain' },
-  { name: 'Mikel Merino', country: 'Spain' },
-  { name: 'Aleix García', country: 'Spain' },
-  { name: 'Fermín López', country: 'Spain' },
-  { name: 'Dean Huijsen', country: 'Spain' },
-  { name: 'Álex Baena', country: 'Spain' },
   { name: 'Unai Simón', country: 'Spain' },
+  { name: 'David Raya', country: 'Spain' },
+  { name: 'Joan García', country: 'Spain' },
+  { name: 'Pedro Porro', country: 'Spain' },
+  { name: 'Marcos Llorente', country: 'Spain' },
+  { name: 'Aymeric Laporte', country: 'Spain' },
+  { name: 'Pau Cubarsí', country: 'Spain' },
+  { name: 'Marc Pubill', country: 'Spain' },
+  { name: 'Eric García', country: 'Spain' },
+  { name: 'Marc Cucurella', country: 'Spain' },
+  { name: 'Alejandro Grimaldo', country: 'Spain' },
+  { name: 'Rodri', country: 'Spain' },
+  { name: 'Martín Zubimendi', country: 'Spain' },
+  { name: 'Pedri', country: 'Spain' },
+  { name: 'Fabián Ruiz', country: 'Spain' },
+  { name: 'Mikel Merino', country: 'Spain' },
+  { name: 'Gavi', country: 'Spain' },
+  { name: 'Álex Baena', country: 'Spain' },
+  { name: 'Mikel Oyarzabal', country: 'Spain' },
+  { name: 'Lamine Yamal', country: 'Spain' },
+  { name: 'Ferran Torres', country: 'Spain' },
+  { name: 'Borja Iglesias', country: 'Spain' },
+  { name: 'Dani Olmo', country: 'Spain' },
+  { name: 'Víctor Muñoz', country: 'Spain' },
+  { name: 'Nico Williams', country: 'Spain' },
+  { name: 'Yéremy Pino', country: 'Spain' },
 
   // Argentina
-  { name: 'Lionel Messi', country: 'Argentina' },
-  { name: 'Lautaro Martínez', country: 'Argentina' },
-  { name: 'Julián Álvarez', country: 'Argentina' },
-  { name: 'Alexis Mac Allister', country: 'Argentina' },
-  { name: 'Enzo Fernández', country: 'Argentina' },
-  { name: 'Cristian Romero', country: 'Argentina' },
   { name: 'Emiliano Martínez', country: 'Argentina' },
-  { name: 'Rodrigo De Paul', country: 'Argentina' },
+  { name: 'Gerónimo Rulli', country: 'Argentina' },
+  { name: 'Juan Musso', country: 'Argentina' },
+  { name: 'Gonzalo Montiel', country: 'Argentina' },
   { name: 'Nahuel Molina', country: 'Argentina' },
   { name: 'Lisandro Martínez', country: 'Argentina' },
-  { name: 'Valentín Barco', country: 'Argentina' },
-  { name: 'Nicolás Paz', country: 'Argentina' },
-  { name: 'Giuliano Simeone', country: 'Argentina' },
+  { name: 'Nicolás Otamendi', country: 'Argentina' },
+  { name: 'Leonardo Balerdi', country: 'Argentina' },
+  { name: 'Cristian Romero', country: 'Argentina' },
+  { name: 'Facundo Medina', country: 'Argentina' },
+  { name: 'Nicolás Tagliafico', country: 'Argentina' },
+  { name: 'Leandro Paredes', country: 'Argentina' },
+  { name: 'Rodrigo De Paul', country: 'Argentina' },
   { name: 'Exequiel Palacios', country: 'Argentina' },
+  { name: 'Enzo Fernández', country: 'Argentina' },
+  { name: 'Alexis Mac Allister', country: 'Argentina' },
+  { name: 'Giovani Lo Celso', country: 'Argentina' },
+  { name: 'Valentín Barco', country: 'Argentina' },
+  { name: 'Lionel Messi', country: 'Argentina' },
+  { name: 'Nico Paz', country: 'Argentina' },
   { name: 'Thiago Almada', country: 'Argentina' },
+  { name: 'Nicolás González', country: 'Argentina' },
+  { name: 'Giuliano Simeone', country: 'Argentina' },
+  { name: 'Lautaro Martínez', country: 'Argentina' },
+  { name: 'José Manuel López', country: 'Argentina' },
+  { name: 'Julián Álvarez', country: 'Argentina' },
 
   // Germany
-  { name: 'Florian Wirtz', country: 'Germany' },
-  { name: 'Jamal Musiala', country: 'Germany' },
+  { name: 'Oliver Baumann', country: 'Germany' },
+  { name: 'Manuel Neuer', country: 'Germany' },
+  { name: 'Alexander Nübel', country: 'Germany' },
+  { name: 'Nadiem Amiri', country: 'Germany' },
+  { name: 'Waldemar Anton', country: 'Germany' },
+  { name: 'Maximilian Beier', country: 'Germany' },
+  { name: 'Nathaniel Brown', country: 'Germany' },
+  { name: 'Leon Goretzka', country: 'Germany' },
+  { name: 'Pascal Groß', country: 'Germany' },
   { name: 'Kai Havertz', country: 'Germany' },
+  { name: 'Lennart Karl', country: 'Germany' },
   { name: 'Joshua Kimmich', country: 'Germany' },
+  { name: 'Jamie Leweling', country: 'Germany' },
+  { name: 'Jamal Musiala', country: 'Germany' },
+  { name: 'Felix Nmecha', country: 'Germany' },
+  { name: 'Aleksandar Pavlović', country: 'Germany' },
+  { name: 'David Raum', country: 'Germany' },
   { name: 'Antonio Rüdiger', country: 'Germany' },
-  { name: 'Marc-André ter Stegen', country: 'Germany' },
   { name: 'Leroy Sané', country: 'Germany' },
   { name: 'Nico Schlotterbeck', country: 'Germany' },
-  { name: 'Aleksandar Pavlović', country: 'Germany' },
+  { name: 'Angelo Stiller', country: 'Germany' },
+  { name: 'Jonathan Tah', country: 'Germany' },
+  { name: 'Malick Thiaw', country: 'Germany' },
   { name: 'Deniz Undav', country: 'Germany' },
-  { name: 'Benjamin Henrichs', country: 'Germany' },
-  { name: 'Chris Führich', country: 'Germany' },
-  { name: 'Maximilian Beier', country: 'Germany' },
+  { name: 'Florian Wirtz', country: 'Germany' },
+  { name: 'Nick Woltemade', country: 'Germany' },
 
   // Portugal
-  { name: 'Cristiano Ronaldo', country: 'Portugal' },
-  { name: 'Bernardo Silva', country: 'Portugal' },
-  { name: 'Bruno Fernandes', country: 'Portugal' },
-  { name: 'Rafael Leão', country: 'Portugal' },
-  { name: 'Rúben Dias', country: 'Portugal' },
-  { name: 'Nuno Mendes', country: 'Portugal' },
   { name: 'Diogo Costa', country: 'Portugal' },
+  { name: 'José Sá', country: 'Portugal' },
+  { name: 'Rui Silva', country: 'Portugal' },
+  { name: 'Ricardo Velho', country: 'Portugal' },
+  { name: 'Tomás Araújo', country: 'Portugal' },
+  { name: 'João Cancelo', country: 'Portugal' },
+  { name: 'Diogo Dalot', country: 'Portugal' },
+  { name: 'Rúben Dias', country: 'Portugal' },
+  { name: 'Gonçalo Inácio', country: 'Portugal' },
+  { name: 'Nuno Mendes', country: 'Portugal' },
+  { name: 'Matheus Nunes', country: 'Portugal' },
+  { name: 'Nélson Semedo', country: 'Portugal' },
+  { name: 'Renato Veiga', country: 'Portugal' },
+  { name: 'Samuel Costa', country: 'Portugal' },
+  { name: 'Bruno Fernandes', country: 'Portugal' },
   { name: 'João Neves', country: 'Portugal' },
+  { name: 'Rúben Neves', country: 'Portugal' },
+  { name: 'Bernardo Silva', country: 'Portugal' },
   { name: 'Vitinha', country: 'Portugal' },
-  { name: 'Gonçalo Ramos', country: 'Portugal' },
-  { name: 'Pedro Neto', country: 'Portugal' },
-  { name: 'João Félix', country: 'Portugal' },
-  { name: 'António Silva', country: 'Portugal' },
   { name: 'Francisco Conceição', country: 'Portugal' },
+  { name: 'João Félix', country: 'Portugal' },
+  { name: 'Gonçalo Guedes', country: 'Portugal' },
+  { name: 'Rafael Leão', country: 'Portugal' },
+  { name: 'Pedro Neto', country: 'Portugal' },
+  { name: 'Gonçalo Ramos', country: 'Portugal' },
+  { name: 'Cristiano Ronaldo', country: 'Portugal' },
+  { name: 'Francisco Trincão', country: 'Portugal' },
 
   // Netherlands
-  { name: 'Xavi Simons', country: 'Netherlands' },
-  { name: 'Cody Gakpo', country: 'Netherlands' },
-  { name: 'Virgil van Dijk', country: 'Netherlands' },
-  { name: 'Frenkie de Jong', country: 'Netherlands' },
-  { name: 'Ryan Gravenberch', country: 'Netherlands' },
-  { name: 'Jeremie Frimpong', country: 'Netherlands' },
-  { name: 'Micky van de Ven', country: 'Netherlands' },
-  { name: 'Tijjani Reijnders', country: 'Netherlands' },
+  { name: 'Mark Flekken', country: 'Netherlands' },
+  { name: 'Robin Roefs', country: 'Netherlands' },
+  { name: 'Bart Verbruggen', country: 'Netherlands' },
+  { name: 'Nathan Aké', country: 'Netherlands' },
+  { name: 'Denzel Dumfries', country: 'Netherlands' },
   { name: 'Jorrel Hato', country: 'Netherlands' },
+  { name: 'Jurriën Timber', country: 'Netherlands' },
+  { name: 'Jan Paul van Hecke', country: 'Netherlands' },
+  { name: 'Virgil van Dijk', country: 'Netherlands' },
+  { name: 'Micky van de Ven', country: 'Netherlands' },
+  { name: 'Frenkie de Jong', country: 'Netherlands' },
+  { name: 'Marten de Roon', country: 'Netherlands' },
+  { name: 'Ryan Gravenberch', country: 'Netherlands' },
+  { name: 'Teun Koopmeiners', country: 'Netherlands' },
+  { name: 'Tijjani Reijnders', country: 'Netherlands' },
+  { name: 'Guus Til', country: 'Netherlands' },
+  { name: 'Quinten Timber', country: 'Netherlands' },
+  { name: 'Mats Wieffer', country: 'Netherlands' },
+  { name: 'Brian Brobbey', country: 'Netherlands' },
+  { name: 'Memphis Depay', country: 'Netherlands' },
+  { name: 'Cody Gakpo', country: 'Netherlands' },
+  { name: 'Justin Kluivert', country: 'Netherlands' },
+  { name: 'Noa Lang', country: 'Netherlands' },
+  { name: 'Donyell Malen', country: 'Netherlands' },
+  { name: 'Crysencio Summerville', country: 'Netherlands' },
+  { name: 'Wout Weghorst', country: 'Netherlands' },
 
   // Belgium
-  { name: 'Kevin De Bruyne', country: 'Belgium' },
-  { name: 'Jérémy Doku', country: 'Belgium' },
-  { name: 'Romelu Lukaku', country: 'Belgium' },
   { name: 'Thibaut Courtois', country: 'Belgium' },
-  { name: 'Loïs Openda', country: 'Belgium' },
+  { name: 'Senne Lammens', country: 'Belgium' },
+  { name: 'Mike Penders', country: 'Belgium' },
+  { name: 'Timothy Castagne', country: 'Belgium' },
+  { name: 'Zeno Debast', country: 'Belgium' },
+  { name: 'Maxim De Cuyper', country: 'Belgium' },
+  { name: 'Koni De Winter', country: 'Belgium' },
+  { name: 'Brandon Mechele', country: 'Belgium' },
+  { name: 'Thomas Meunier', country: 'Belgium' },
+  { name: 'Nathan Ngoy', country: 'Belgium' },
+  { name: 'Joaquin Seys', country: 'Belgium' },
+  { name: 'Arthur Theate', country: 'Belgium' },
+  { name: 'Kevin De Bruyne', country: 'Belgium' },
+  { name: 'Amadou Onana', country: 'Belgium' },
+  { name: 'Nicolas Raskin', country: 'Belgium' },
+  { name: 'Youri Tielemans', country: 'Belgium' },
+  { name: 'Hans Vanaken', country: 'Belgium' },
+  { name: 'Axel Witsel', country: 'Belgium' },
+  { name: 'Charles De Ketelaere', country: 'Belgium' },
+  { name: 'Jérémy Doku', country: 'Belgium' },
+  { name: 'Matias Fernandez-Pardo', country: 'Belgium' },
+  { name: 'Romelu Lukaku', country: 'Belgium' },
+  { name: 'Dodi Lukebakio', country: 'Belgium' },
+  { name: 'Diego Moreira', country: 'Belgium' },
+  { name: 'Alexis Saelemaekers', country: 'Belgium' },
+  { name: 'Leandro Trossard', country: 'Belgium' },
 
   // Uruguay
-  { name: 'Fede Valverde', country: 'Uruguay' },
-  { name: 'Darwin Núñez', country: 'Uruguay' },
+  { name: 'Santiago Mele', country: 'Uruguay' },
+  { name: 'Fernando Muslera', country: 'Uruguay' },
+  { name: 'Sergio Rochet', country: 'Uruguay' },
   { name: 'Ronald Araújo', country: 'Uruguay' },
-  { name: 'Manuel Ugarte', country: 'Uruguay' },
+  { name: 'Santiago Bueno', country: 'Uruguay' },
+  { name: 'Sebastián Cáceres', country: 'Uruguay' },
   { name: 'José María Giménez', country: 'Uruguay' },
+  { name: 'Mathías Olivera', country: 'Uruguay' },
+  { name: 'Joaquín Piquerez', country: 'Uruguay' },
+  { name: 'Guillermo Varela', country: 'Uruguay' },
+  { name: 'Matías Viña', country: 'Uruguay' },
+  { name: 'Maximiliano Araújo', country: 'Uruguay' },
+  { name: 'Giorgian de Arrascaeta', country: 'Uruguay' },
+  { name: 'Rodrigo Bentancur', country: 'Uruguay' },
+  { name: 'Agustín Canobbio', country: 'Uruguay' },
+  { name: 'Nicolás de la Cruz', country: 'Uruguay' },
+  { name: 'Emiliano Martínez', country: 'Uruguay' },
+  { name: 'Facundo Pellistri', country: 'Uruguay' },
+  { name: 'Brian Rodríguez', country: 'Uruguay' },
+  { name: 'Juan Manuel Sanabria', country: 'Uruguay' },
+  { name: 'Manuel Ugarte', country: 'Uruguay' },
+  { name: 'Federico Valverde', country: 'Uruguay' },
+  { name: 'Rodrigo Zalazar', country: 'Uruguay' },
+  { name: 'Rodrigo Aguirre', country: 'Uruguay' },
+  { name: 'Federico Viñas', country: 'Uruguay' },
+  { name: 'Darwin Núñez', country: 'Uruguay' },
 
   // Croatia
-  { name: 'Luka Modrić', country: 'Croatia' },
+  { name: 'Dominik Livaković', country: 'Croatia' },
+  { name: 'Dominik Kotarski', country: 'Croatia' },
+  { name: 'Ivor Pandur', country: 'Croatia' },
   { name: 'Joško Gvardiol', country: 'Croatia' },
+  { name: 'Duje Ćaleta-Car', country: 'Croatia' },
+  { name: 'Josip Šutalo', country: 'Croatia' },
+  { name: 'Josip Stanišić', country: 'Croatia' },
+  { name: 'Marin Pongračić', country: 'Croatia' },
+  { name: 'Martin Erlić', country: 'Croatia' },
+  { name: 'Luka Vušković', country: 'Croatia' },
+  { name: 'Luka Modrić', country: 'Croatia' },
+  { name: 'Mateo Kovačić', country: 'Croatia' },
+  { name: 'Mario Pašalić', country: 'Croatia' },
+  { name: 'Nikola Vlašić', country: 'Croatia' },
+  { name: 'Luka Sučić', country: 'Croatia' },
+  { name: 'Martin Baturina', country: 'Croatia' },
+  { name: 'Kristijan Jakić', country: 'Croatia' },
+  { name: 'Petar Sučić', country: 'Croatia' },
+  { name: 'Nikola Moro', country: 'Croatia' },
+  { name: 'Toni Fruk', country: 'Croatia' },
+  { name: 'Ivan Perišić', country: 'Croatia' },
+  { name: 'Andrej Kramarić', country: 'Croatia' },
+  { name: 'Ante Budimir', country: 'Croatia' },
+  { name: 'Marco Pašalić', country: 'Croatia' },
+  { name: 'Petar Musa', country: 'Croatia' },
+  { name: 'Igor Matanović', country: 'Croatia' },
 
   // Mexico
-  { name: 'Santiago Giménez', country: 'Mexico' },
+  { name: 'Raúl Rangel', country: 'Mexico' },
+  { name: 'Guillermo Ochoa', country: 'Mexico' },
+  { name: 'Carlos Acevedo', country: 'Mexico' },
+  { name: 'Johan Vásquez', country: 'Mexico' },
+  { name: 'César Montes', country: 'Mexico' },
+  { name: 'Israel Reyes', country: 'Mexico' },
+  { name: 'Jesús Gallardo', country: 'Mexico' },
+  { name: 'Mateo Chávez', country: 'Mexico' },
+  { name: 'Jorge Sánchez', country: 'Mexico' },
   { name: 'Edson Álvarez', country: 'Mexico' },
+  { name: 'Gilberto Mora', country: 'Mexico' },
+  { name: 'Brian Gutiérrez', country: 'Mexico' },
+  { name: 'Luis Romo', country: 'Mexico' },
+  { name: 'Orbelín Pineda', country: 'Mexico' },
+  { name: 'Álvaro Fidalgo', country: 'Mexico' },
+  { name: 'Erik Lira', country: 'Mexico' },
+  { name: 'Luis Chávez', country: 'Mexico' },
+  { name: 'Obed Vargas', country: 'Mexico' },
+  { name: 'Raúl Jiménez', country: 'Mexico' },
+  { name: 'Guillermo Martínez', country: 'Mexico' },
+  { name: 'Santiago Giménez', country: 'Mexico' },
+  { name: 'Armando González', country: 'Mexico' },
+  { name: 'Julián Quiñones', country: 'Mexico' },
+  { name: 'Alexis Vega', country: 'Mexico' },
+  { name: 'César Huerta', country: 'Mexico' },
+  { name: 'Roberto Alvarado', country: 'Mexico' },
 
   // Colombia
-  { name: 'Luis Díaz', country: 'Colombia' },
+  { name: 'Álvaro Montero', country: 'Colombia' },
+  { name: 'Camilo Vargas', country: 'Colombia' },
+  { name: 'David Ospina', country: 'Colombia' },
+  { name: 'Daniel Muñoz', country: 'Colombia' },
+  { name: 'Santiago Arias', country: 'Colombia' },
+  { name: 'Dávinson Sánchez', country: 'Colombia' },
+  { name: 'Jhon Lucumí', country: 'Colombia' },
+  { name: 'Yerry Mina', country: 'Colombia' },
+  { name: 'Willer Ditta', country: 'Colombia' },
+  { name: 'Déiver Machado', country: 'Colombia' },
+  { name: 'Johan Mojica', country: 'Colombia' },
+  { name: 'Gustavo Puerta', country: 'Colombia' },
   { name: 'James Rodríguez', country: 'Colombia' },
+  { name: 'Jefferson Lerma', country: 'Colombia' },
+  { name: 'Jhon Arias', country: 'Colombia' },
+  { name: 'Jorge Carrascal', country: 'Colombia' },
+  { name: 'Juan Fernando Quintero', country: 'Colombia' },
+  { name: 'Richard Ríos', country: 'Colombia' },
+  { name: 'Kevin Castaño', country: 'Colombia' },
+  { name: 'Jaminton Campaz', country: 'Colombia' },
+  { name: 'Juan Portilla', country: 'Colombia' },
+  { name: 'Luis Díaz', country: 'Colombia' },
+  { name: 'Luis Suárez', country: 'Colombia' },
+  { name: 'Jhon Córdoba', country: 'Colombia' },
+  { name: 'Carlos Gómez', country: 'Colombia' },
+  { name: 'Juan Camilo Hernández', country: 'Colombia' },
 
   // USA
-  { name: 'Christian Pulisic', country: 'USA' },
+  { name: 'Matt Turner', country: 'USA' },
+  { name: 'Sergiño Dest', country: 'USA' },
+  { name: 'Chris Richards', country: 'USA' },
+  { name: 'Tyler Adams', country: 'USA' },
+  { name: 'Antonee Robinson', country: 'USA' },
+  { name: 'Auston Trusty', country: 'USA' },
+  { name: 'Gio Reyna', country: 'USA' },
   { name: 'Weston McKennie', country: 'USA' },
-  { name: 'Giovanni Reyna', country: 'USA' },
-  { name: 'Tim Weah', country: 'USA' },
-
-  // South Korea
-  { name: 'Son Heung-min', country: 'South Korea' },
-  { name: 'Kim Min-jae', country: 'South Korea' },
-
-  // Norway
-  { name: 'Erling Haaland', country: 'Norway' },
-  { name: 'Martin Ødegaard', country: 'Norway' },
-
-  // Sweden
-  { name: 'Alexander Isak', country: 'Sweden' },
-  { name: 'Viktor Gyökeres', country: 'Sweden' },
+  { name: 'Ricardo Pepi', country: 'USA' },
+  { name: 'Christian Pulisic', country: 'USA' },
+  { name: 'Brenden Aaronson', country: 'USA' },
+  { name: 'Miles Robinson', country: 'USA' },
+  { name: 'Tim Ream', country: 'USA' },
+  { name: 'Sebastian Berhalter', country: 'USA' },
+  { name: 'Cristian Roldan', country: 'USA' },
+  { name: 'Alex Freeman', country: 'USA' },
+  { name: 'Malik Tillman', country: 'USA' },
+  { name: 'Max Arfsten', country: 'USA' },
+  { name: 'Haji Wright', country: 'USA' },
+  { name: 'Folarin Balogun', country: 'USA' },
+  { name: 'Timothy Weah', country: 'USA' },
+  { name: 'Mark McKenzie', country: 'USA' },
+  { name: 'Joe Scally', country: 'USA' },
+  { name: 'Matt Freese', country: 'USA' },
+  { name: 'Chris Brady', country: 'USA' },
+  { name: 'Alejandro Zendejas', country: 'USA' },
 
   // Morocco
-  { name: 'Achraf Hakimi', country: 'Morocco' },
   { name: 'Yassine Bounou', country: 'Morocco' },
-
-  // Japan
-  { name: 'Takefusa Kubo', country: 'Japan' },
-  { name: 'Kaoru Mitoma', country: 'Japan' },
-
-  // Turkey
-  { name: 'Arda Güler', country: 'Turkey' },
-  { name: 'Hakan Çalhanoğlu', country: 'Turkey' },
-
-  // Hungary
-  { name: 'Dominik Szoboszlai', country: 'Hungary' },
-
-  // Canada
-  { name: 'Alphonso Davies', country: 'Canada' },
-  { name: 'Jonathan David', country: 'Canada' },
-
-  // Senegal
-  { name: 'Sadio Mané', country: 'Senegal' },
-  { name: 'Kalidou Koulibaly', country: 'Senegal' },
-
-  // Ivory Coast
-  { name: 'Sébastien Haller', country: 'Ivory Coast' },
-  { name: 'Franck Kessié', country: 'Ivory Coast' },
-
-  // Egypt
-  { name: 'Mohamed Salah', country: 'Egypt' },
-
-  // Ecuador
-  { name: 'Moisés Caicedo', country: 'Ecuador' },
-
-  // Paraguay
-  { name: 'Miguel Almirón', country: 'Paraguay' },
-
-  // Switzerland
-  { name: 'Granit Xhaka', country: 'Switzerland' },
-
-  // Austria
-  { name: 'David Alaba', country: 'Austria' },
-
-  // Australia
-  { name: 'Harry Souttar', country: 'Australia' },
-
-  // Iran
-  { name: 'Mehdi Taremi', country: 'Iran' }
+  { name: 'Munir El Kajoui', country: 'Morocco' },
+  { name: 'Reda Tagnaouti', country: 'Morocco' },
+  { name: 'Noussair Mazraoui', country: 'Morocco' },
+  { name: 'Anass Salah-Eddine', country: 'Morocco' },
+  { name: 'Youssef Belammari', country: 'Morocco' },
+  { name: 'Achraf Hakimi', country: 'Morocco' },
+  { name: 'Zakaria El Ouahdi', country: 'Morocco' },
+  { name: 'Nayef Aguerd', country: 'Morocco' },
+  { name: 'Chadi Riad', country: 'Morocco' },
+  { name: 'Redouane Halhal', country: 'Morocco' },
+  { name: 'Issa Diop', country: 'Morocco' },
+  { name: 'Samir El Mourabet', country: 'Morocco' },
+  { name: 'Ayyoub Bouaddi', country: 'Morocco' },
+  { name: 'Neil El Aynaoui', country: 'Morocco' },
+  { name: 'Sofyan Amrabat', country: 'Morocco' },
+  { name: 'Azzedine Ounahi', country: 'Morocco' },
+  { name: 'Bilal El Khannouss', country: 'Morocco' },
+  { name: 'Ismael Saibari', country: 'Morocco' },
+  { name: 'Abde Ezzalzouli', country: 'Morocco' },
+  { name: 'Chemsdine Talbi', country: 'Morocco' },
+  { name: 'Soufiane Rahimi', country: 'Morocco' },
+  { name: 'Ayoub El Kaabi', country: 'Morocco' },
+  { name: 'Brahim Díaz', country: 'Morocco' },
+  { name: 'Gessime Yassine', country: 'Morocco' },
+  { name: 'Ayoube Amaimouni', country: 'Morocco' }
 ];
 
 function getFlagClass(team) {
@@ -416,6 +618,7 @@ const LOCAL_STORAGE_VERSION = '5';
 const LOCAL_STORAGE_VERSION_KEY = 'wc2026_version';
 const LOCAL_STORAGE_PICKS_KEY = 'wc2026_picks';
 let localSaveTimer = null;
+let resultsAdminMode = false;
 
 function normalizeLoadedState() {
   ensureAllGroupMatches();
@@ -892,9 +1095,9 @@ function openGroupResultsModal(group) {
         <span>${match.team1}</span>
       </div>
       <div class="match-score-controls">
-        <input class="score-input" type="number" min="0" max="99" inputmode="numeric" data-key="${match.key}" data-side="home" value="${result.home ?? 0}">
+        <input class="score-input" type="number" min="0" max="99" inputmode="numeric" data-key="${match.key}" data-side="home" value="${result.home ?? ''}">
         <span class="score-separator">-</span>
-        <input class="score-input" type="number" min="0" max="99" inputmode="numeric" data-key="${match.key}" data-side="away" value="${result.away ?? 0}">
+        <input class="score-input" type="number" min="0" max="99" inputmode="numeric" data-key="${match.key}" data-side="away" value="${result.away ?? ''}">
       </div>
       <div class="match-team match-team-right">
         <span>${match.team2}</span>
@@ -2237,7 +2440,7 @@ function openScoringHelpModal() {
           <h4>🌍 Fase de grupos</h4>
           <ul>
             <li>Resultado exacto de partido: <strong>${puntuaciones.grupos.partido.resultadoExacto} pts</strong></li>
-            <li>Ganador/empate correcto: <strong>${puntuaciones.grupos.partido.ganadorEmpateCorrecto} pt</strong></li>
+            <li>Solo ganador/empate correcto (no exacto): <strong>${puntuaciones.grupos.partido.ganadorEmpateCorrecto} pt</strong></li>
             <li>1º exacto de grupo: <strong>${puntuaciones.grupos.posicion.primero} pts</strong></li>
             <li>2º exacto de grupo: <strong>${puntuaciones.grupos.posicion.segundo} pts</strong></li>
             <li>3º exacto de grupo: <strong>${puntuaciones.grupos.posicion.tercero} pt</strong></li>
@@ -2280,7 +2483,7 @@ function openScoringHelpModal() {
       </div>
 
       <div class="scoring-help-footer">
-        Los resultados y las puntuaciones NO son reales, se resetearán a 0 cuando comience el mundial. Es solo un ejemplo aleatorio.
+        El que gane, se lleva los 50€ de los demás.
       </div>
     </div>
   `;
@@ -2492,9 +2695,9 @@ function renderReviewGroups(prediction, entry) {
         const isThird = idx === 2;
         const isFourth = idx === 3;
         const eliminated = isFourth || (isThird && !autoThirds.has(team));
-        const statusClass = realOrder.length
+        const statusClass = !eliminated && realOrder.length
           ? getPredictionStandingReviewClass(team, idx, predOrder, autoThirds, realOrder, realThirds)
-          : ' review-pending';
+          : (!eliminated ? ' review-pending' : '');
 
         const row = document.createElement('div');
         row.className =
@@ -3147,12 +3350,12 @@ function renderReviewAwards(prediction) {
   container.innerHTML = '';
 
   const rows = [
-    [`Bota de oro (${puntuaciones.premios.goldenBoot[0]}pt)`, prediction.awards?.goldenBoot?.[0], RESULTS.awards?.goldenBoot?.[0]],
-    [`Bota de plata (${puntuaciones.premios.goldenBoot[1]}pt)`, prediction.awards?.goldenBoot?.[1], RESULTS.awards?.goldenBoot?.[1]],
-    [`Bota de bronce(${puntuaciones.premios.goldenBoot[2]}pt)`, prediction.awards?.goldenBoot?.[2], RESULTS.awards?.goldenBoot?.[2]],
-    [`Balón de oro (${puntuaciones.premios.goldenBall[0]}pt)`, prediction.awards?.goldenBall?.[0], RESULTS.awards?.goldenBall?.[0]],
-    [`Balón de plata (${puntuaciones.premios.goldenBall[1]}pt)`, prediction.awards?.goldenBall?.[1], RESULTS.awards?.goldenBall?.[1]],
-    [`Balón de bronce (${puntuaciones.premios.goldenBall[2]}pt)`, prediction.awards?.goldenBall?.[2], RESULTS.awards?.goldenBall?.[2]]
+    [`🏆 Bota de oro (${puntuaciones.premios.goldenBoot[0]}pt)`, prediction.awards?.goldenBoot?.[0], RESULTS.awards?.goldenBoot?.[0]],
+    [`🥈 Bota de plata (${puntuaciones.premios.goldenBoot[1]}pt)`, prediction.awards?.goldenBoot?.[1], RESULTS.awards?.goldenBoot?.[1]],
+    [`🥉 Bota de bronce (${puntuaciones.premios.goldenBoot[2]}pt)`, prediction.awards?.goldenBoot?.[2], RESULTS.awards?.goldenBoot?.[2]],
+    [`🏆 Balón de oro (${puntuaciones.premios.goldenBall[0]}pt)`, prediction.awards?.goldenBall?.[0], RESULTS.awards?.goldenBall?.[0]],
+    [`🥈 Balón de plata (${puntuaciones.premios.goldenBall[1]}pt)`, prediction.awards?.goldenBall?.[1], RESULTS.awards?.goldenBall?.[1]],
+    [`🥉 Balón de bronce (${puntuaciones.premios.goldenBall[2]}pt)`, prediction.awards?.goldenBall?.[2], RESULTS.awards?.goldenBall?.[2]]
   ];
 
   rows.forEach(([label, predicted, real]) => {
@@ -3169,9 +3372,18 @@ function renderReviewAwards(prediction) {
 
     row.innerHTML = `
       <label>${label}:</label>
-      <div class="award-select" style="cursor:default;">
-        ${predicted || '---'}
-        ${resolved ? `<small style="display:block;font-weight:700;">Actual: ${real}</small>` : ''}
+      <div class="award-custom award-readonly">
+        <div class="award-custom-trigger" style="cursor:default;">
+          ${awardDisplayHtml(predicted)}
+        </div>
+        ${resolved ? `
+          <small style="display:block;font-weight:700;margin-top:6px;">
+            Actual:
+            <span style="display:inline-flex;align-items:center;gap:6px;">
+              ${awardDisplayHtml(real)}
+            </span>
+          </small>
+        ` : ''}
       </div>
     `;
 
@@ -3290,14 +3502,575 @@ async function confirmSubmitPrediction() {
   }
 }
 
-// ---- Master Render ----
-function renderAll() {
+
+// ---- Hidden Results Admin ----
+function clonePlain(value, fallback) {
+  try {
+    return JSON.parse(JSON.stringify(value ?? fallback));
+  } catch (e) {
+    return fallback;
+  }
+}
+
+function loadResultsIntoEditor() {
+  const current = typeof RESULTS !== 'undefined' ? RESULTS : {};
+
+  state.groupMatches = normalizeGroupMatchesForStandings(current.groupMatches || {});
+  ensureAllGroupMatches();
+
+  GROUP_NAMES.forEach(group => {
+    if (isGroupComplete(group)) {
+      state.groups[group] = calculateGroupStandings(group).map(row => row.team);
+    } else {
+      state.groups[group] = (TEAMS_BY_GROUP[group] || []).map(team => team.name);
+    }
+  });
+
+  const allGroupsComplete = GROUP_NAMES.every(isGroupComplete);
+
+  state.thirdPlace = [];
+  if (allGroupsComplete) {
+    syncAutoThirdPlace();
+  }
+
+  state.knockoutResults = {};
+  state.matchTeams = {};
+
+  // No precargamos ni construimos eliminatorias hasta que estén completos
+  // los 12 grupos. Así el results.js generado no se contamina con cruces
+  // parcialmente calculados o equipos null.
+  if (allGroupsComplete) {
+    const knockoutMatches = current.knockout?.matches || {};
+    Object.values(knockoutMatches).flat().forEach(match => {
+      if (match?.match && match?.winner) {
+        state.knockoutResults[match.match] = match.winner;
+      }
+    });
+
+    buildTPAllocation();
+    computeMatchTeams();
+  } else {
+    tpAllocation = {};
+  }
+
+  state.awards = {
+    goldenBoot: current.awards?.goldenBoot || ['', '', ''],
+    goldenBall: current.awards?.goldenBall || ['', '', '']
+  };
+
+  fillAwards(state.awards);
+}
+
+function trimTrailingEmptyAwards(list) {
+  const arr = (list || []).map(value => value || '');
+  while (arr.length && !arr[arr.length - 1]) arr.pop();
+  return arr;
+}
+
+function emptyKnockoutResultsPayload() {
+  return {
+    round32: [],
+    round16: [],
+    quarterfinals: [],
+    semifinals: [],
+    champion: '',
+    runnerUp: '',
+    finalists: [],
+    thirdPlaceWinner: '',
+    final: '',
+    thirdPlace: '',
+    matches: {
+      round32: [],
+      round16: [],
+      quarterfinals: [],
+      semifinals: [],
+      thirdPlace: [],
+      final: []
+    }
+  };
+}
+
+function buildKnockoutResultsPayload(canBuildThirdPlace = GROUP_NAMES.every(isGroupComplete)) {
+  if (!canBuildThirdPlace) {
+    tpAllocation = {};
+    state.thirdPlace = [];
+    state.matchTeams = {};
+    state.knockoutResults = {};
+    return emptyKnockoutResultsPayload();
+  }
+
   buildTPAllocation();
   computeMatchTeams();
-  renderGroups();
-  renderThirdPlace();
-  renderBracket();
-  renderAwardSelects();
+
+  function roundNums(roundName) {
+    return (KO_TREE?.[roundName] || []).map(match => match.num);
+  }
+
+  function winners(nums) {
+    return nums.map(num => state.knockoutResults[num]).filter(Boolean);
+  }
+
+  function allTeams(nums) {
+    return nums
+      .flatMap(num => {
+        const match = state.matchTeams[num] || {};
+        return [match.team1, match.team2];
+      })
+      .filter(Boolean);
+  }
+
+  function matchDetails(nums) {
+    return nums
+      .map(num => {
+        const match = state.matchTeams[num] || {};
+        const winner = state.knockoutResults[num] || null;
+
+        if (!match.team1 && !match.team2 && !winner) return null;
+
+        return {
+          match: num,
+          team1: match.team1 || null,
+          team2: match.team2 || null,
+          winner
+        };
+      })
+      .filter(Boolean);
+  }
+
+  const r32nums = roundNums('round32');
+  const r16nums = roundNums('round16');
+  const qfnums = roundNums('quarterfinals');
+  const sfnums = roundNums('semifinals');
+  const finalNum = KO_TREE?.final?.[0]?.num || null;
+  const thirdNum = KO_TREE?.thirdPlace?.[0]?.num || null;
+  const finalMatch = finalNum ? (state.matchTeams[finalNum] || {}) : {};
+  const thirdPlaceWinner = thirdNum ? (state.knockoutResults[thirdNum] || null) : null;
+  const champion = finalNum ? (state.knockoutResults[finalNum] || null) : null;
+  const runnerUp = champion
+    ? ([finalMatch.team1, finalMatch.team2].find(team => team && team !== champion) || null)
+    : null;
+
+  return {
+    round32: winners(r32nums),
+    round16: winners(r16nums),
+    quarterfinals: winners(qfnums),
+    semifinals: winners(sfnums),
+    champion: champion || '',
+    runnerUp: runnerUp || '',
+    finalists: [finalMatch.team1, finalMatch.team2].filter(Boolean),
+    thirdPlaceWinner: thirdPlaceWinner || '',
+    final: champion || '',
+    thirdPlace: thirdPlaceWinner || '',
+    matches: {
+      round32: matchDetails(r32nums),
+      round16: matchDetails(r16nums),
+      quarterfinals: matchDetails(qfnums),
+      semifinals: matchDetails(sfnums),
+      thirdPlace: thirdNum ? matchDetails([thirdNum]) : [],
+      final: finalNum ? matchDetails([finalNum]) : []
+    }
+  };
+}
+
+function buildResultsFilePayload() {
+  const groups = {};
+  const groupMatches = {};
+
+  GROUP_NAMES.forEach(group => {
+    groupMatches[group] = {};
+
+    getGroupMatchList(group).forEach(match => {
+      const result = state.groupMatches[group]?.[match.key] || {};
+      const home = parseGoalValue(result.home);
+      const away = parseGoalValue(result.away);
+
+      if (home === null || away === null) return;
+
+      const outputKey = `${match.team1}__${match.team2}`;
+      groupMatches[group][outputKey] = { home, away };
+    });
+
+    groups[group] = isGroupComplete(group)
+      ? calculateGroupStandings(group).map(row => row.team)
+      : [];
+  });
+
+  const allGroupsComplete = GROUP_NAMES.every(isGroupComplete);
+  const thirdPlace = allGroupsComplete
+    ? getAutoThirdPlaceTeams().map(item => item.row.team)
+    : [];
+  state.thirdPlace = thirdPlace;
+
+  const knockout = buildKnockoutResultsPayload(allGroupsComplete);
+  const awards = readAwards();
+
+  return {
+    groups,
+    thirdPlace,
+    groupMatches,
+    knockout,
+    semifinalists: allUniqueTeamsFromMatches(knockout.matches.semifinals),
+    finalists: knockout.finalists,
+    champion: knockout.champion || '',
+    runnerUp: knockout.runnerUp || '',
+    thirdPlaceWinner: knockout.thirdPlaceWinner || '',
+    awards: {
+      goldenBoot: trimTrailingEmptyAwards(awards.goldenBoot),
+      goldenBall: trimTrailingEmptyAwards(awards.goldenBall)
+    }
+  };
+}
+
+function allUniqueTeamsFromMatches(matches) {
+  const seen = new Set();
+  (matches || []).forEach(match => {
+    [match.team1, match.team2].forEach(team => {
+      if (team) seen.add(team);
+    });
+  });
+  return Array.from(seen);
+}
+
+function stringifyResultsJs(value) {
+  const json = JSON.stringify(value, null, 2);
+
+  const compactScores = json.replace(
+    /\{\n\s+"home": (\d+),\n\s+"away": (\d+)\n\s+\}/g,
+    '{ "home": $1, "away": $2 }'
+  );
+
+  return `const RESULTS = ${compactScores};\n`;
+}
+
+function downloadTextFile(filename, content) {
+  const blob = new Blob([content], { type: 'text/javascript;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+}
+
+async function copyText(textarea) {
+  const value = textarea.value;
+
+  try {
+    await navigator.clipboard.writeText(value);
+    showToast('Copiado');
+  } catch (e) {
+    textarea.focus();
+    textarea.select();
+    document.execCommand('copy');
+    showToast('Copiado');
+  }
+}
+
+const RESULTS_GITHUB_REPO = {
+  owner: 'jjimenezgarcia',
+  repo: 'worldcup2026-prediction',
+  path: 'results.js',
+  branch: 'main'
+};
+const GITHUB_API_BASE = 'https://api.github.com';
+const GITHUB_API_VERSION = '2022-11-28';
+
+function encodePathForGitHub(path) {
+  return path.split('/').map(encodeURIComponent).join('/');
+}
+
+function toBase64Utf8(value) {
+  const bytes = new TextEncoder().encode(value);
+  let binary = '';
+  const chunkSize = 0x8000;
+
+  for (let i = 0; i < bytes.length; i += chunkSize) {
+    binary += String.fromCharCode(...bytes.slice(i, i + chunkSize));
+  }
+
+  return btoa(binary);
+}
+
+function fromBase64Utf8(value) {
+  const binary = atob(String(value || '').replace(/\n/g, ''));
+  const bytes = new Uint8Array(binary.length);
+
+  for (let i = 0; i < binary.length; i += 1) {
+    bytes[i] = binary.charCodeAt(i);
+  }
+
+  return new TextDecoder().decode(bytes);
+}
+
+function normalizeFileForComparison(value) {
+  return String(value || '').replace(/\r\n/g, '\n').trim();
+}
+
+function setGitHubUpdateStatus(message, isError = false) {
+  const status = document.getElementById('githubUpdateStatus');
+  if (!status) return;
+
+  status.className = isError ? 'error-toast-inline' : 'success-toast-inline';
+  status.innerHTML = message;
+}
+
+function buildGitHubApiError(response, body, rawText) {
+  const acceptedPermissions = response.headers.get('x-accepted-github-permissions');
+  const details = Array.isArray(body?.errors)
+    ? body.errors.map(err => err.message || err.code || JSON.stringify(err)).filter(Boolean).join(' | ')
+    : '';
+
+  return [
+    `GitHub ${response.status} ${response.statusText}`,
+    body?.message || rawText,
+    details,
+    acceptedPermissions ? `Permisos esperados: ${acceptedPermissions}` : ''
+  ].filter(Boolean).join(' — ');
+}
+
+async function githubRequest(path, token, options = {}) {
+  const response = await fetch(`${GITHUB_API_BASE}${path}`, {
+    ...options,
+    headers: {
+      Accept: 'application/vnd.github+json',
+      Authorization: `Bearer ${token}`,
+      'X-GitHub-Api-Version': GITHUB_API_VERSION,
+      ...(options.headers || {})
+    }
+  });
+
+  const rawText = await response.text();
+  let body = null;
+
+  if (rawText) {
+    try {
+      body = JSON.parse(rawText);
+    } catch (e) {
+      body = null;
+    }
+  }
+
+  if (!response.ok) {
+    throw new Error(buildGitHubApiError(response, body, rawText));
+  }
+
+  return body;
+}
+
+async function commitResultsToMain(fileContent, token) {
+  const cleanToken = String(token || '').trim();
+
+  if (!cleanToken) {
+    throw new Error('Pega un PAT de GitHub primero. No se guarda en ningún sitio; solo se usa para esta petición.');
+  }
+
+  const { owner, repo, path, branch } = RESULTS_GITHUB_REPO;
+  const encodedPath = encodePathForGitHub(path);
+
+  setGitHubUpdateStatus(`Leyendo ${path} en ${branch}...`);
+  const currentFile = await githubRequest(
+    `/repos/${owner}/${repo}/contents/${encodedPath}?ref=${encodeURIComponent(branch)}`,
+    cleanToken
+  );
+
+  const remoteContent = fromBase64Utf8(currentFile.content || '');
+  if (normalizeFileForComparison(remoteContent) === normalizeFileForComparison(fileContent)) {
+    throw new Error(`No hay cambios respecto al ${path} que está ahora mismo en ${branch}.`);
+  }
+
+  setGitHubUpdateStatus(`Actualizando ${path} directamente en ${branch}...`);
+  const result = await githubRequest(`/repos/${owner}/${repo}/contents/${encodedPath}`, cleanToken, {
+    method: 'PUT',
+    body: JSON.stringify({
+      message: 'resultados',
+      content: toBase64Utf8(fileContent),
+      sha: currentFile.sha,
+      branch
+    })
+  });
+
+  return result;
+}
+
+async function submitGeneratedResultsCommit(textarea, tokenInput, button) {
+  const token = tokenInput.value;
+  tokenInput.value = '';
+  button.disabled = true;
+  button.textContent = 'Actualizando main...';
+
+  try {
+    const result = await commitResultsToMain(textarea.value, token);
+    const commitUrl = result?.commit?.html_url;
+    setGitHubUpdateStatus(
+      commitUrl
+        ? `Commit creado en main: <a href="${commitUrl}" target="_blank" rel="noopener noreferrer">ver commit</a>`
+        : 'Commit creado en main.'
+    );
+    showToast('results.js actualizado en main');
+  } catch (e) {
+    console.error(e);
+    setGitHubUpdateStatus(e.message || 'Error actualizando main.', true);
+    showToast('Error actualizando main', true);
+  } finally {
+    button.disabled = false;
+    button.textContent = 'Actualizar main';
+  }
+}
+
+function openGeneratedResultsModal() {
+  const payload = buildResultsFilePayload();
+  const fileContent = stringifyResultsJs(payload);
+
+  const modal = document.getElementById('predictionModal');
+  const viewer = document.getElementById('predictionViewer');
+  modal.style.display = 'flex';
+
+  const completeGroups = GROUP_NAMES.filter(isGroupComplete).length;
+
+  viewer.innerHTML = `
+    <div class="results-output">
+      <h3>results.js generado</h3>
+      <p class="note-text">
+        Grupos completos: ${completeGroups}/${GROUP_NAMES.length}. Los grupos incompletos quedan como [] y no meten clasificados todavía. El bracket y los premios salen con lo que hayas elegido ahora mismo.
+      </p>
+      <textarea id="generatedResultsTextarea" class="results-output-textarea" spellcheck="false"></textarea>
+      <div class="group-modal-actions">
+        <button type="button" class="toolbar-btn" id="copyGeneratedResults">Copiar archivo completo</button>
+        <button type="button" class="toolbar-btn" id="downloadGeneratedResults">Descargar results.js</button>
+        <button type="button" class="submit-btn" id="showGithubUpdatePanel">Actualizar main en GitHub</button>
+        <button type="button" class="toolbar-btn" id="closeGeneratedResults">Cerrar</button>
+      </div>
+      <div id="githubUpdatePanel" class="github-pr-panel" style="display:none;">
+        <h4>Actualizar main en GitHub</h4>
+        <p class="note-text">
+          Pega un PAT fine-grained con acceso a ${RESULTS_GITHUB_REPO.owner}/${RESULTS_GITHUB_REPO.repo}. Para este modo directo necesita Contents: Read and write. No se guarda: se borra del input justo al enviar.
+        </p>
+        <input
+          type="password"
+          id="githubPatInput"
+          class="name-modal-input"
+          name="github-token"
+          autocomplete="current-password"
+          placeholder="GitHub PAT"
+          spellcheck="false"
+        >
+        <div class="group-modal-actions">
+          <button type="button" class="submit-btn" id="updateGithubMain">Actualizar main</button>
+        </div>
+        <div id="githubUpdateStatus" class="github-pr-status" aria-live="polite"></div>
+      </div>
+    </div>
+  `;
+
+  const textarea = document.getElementById('generatedResultsTextarea');
+  textarea.value = fileContent;
+  textarea.focus();
+  textarea.select();
+
+  document.getElementById('copyGeneratedResults').addEventListener('click', () => copyText(textarea));
+  document.getElementById('downloadGeneratedResults').addEventListener('click', () => downloadTextFile('results.js', textarea.value));
+  document.getElementById('closeGeneratedResults').addEventListener('click', closePredictionModal);
+
+  document.getElementById('showGithubUpdatePanel').addEventListener('click', () => {
+    const panel = document.getElementById('githubUpdatePanel');
+    panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+    if (panel.style.display !== 'none') {
+      setTimeout(() => document.getElementById('githubPatInput')?.focus(), 50);
+    }
+  });
+
+  document.getElementById('updateGithubMain').addEventListener('click', () => {
+    submitGeneratedResultsCommit(
+      textarea,
+      document.getElementById('githubPatInput'),
+      document.getElementById('updateGithubMain')
+    );
+  });
+
+  document.getElementById('githubPatInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      document.getElementById('updateGithubMain').click();
+    }
+  });
+}
+
+function enterResultsAdminMode() {
+  resultsAdminMode = true;
+  document.body.classList.add('results-admin-mode');
+
+  document.getElementById('tab-leaderboard')?.classList.remove('active');
+  document.getElementById('tab-predict')?.classList.add('active');
+
+  const note = document.getElementById('groupStageNote');
+  if (note) {
+    note.textContent = 'Modo admin: precargado con lo que ya hay en results.js. Rellena solo los partidos nuevos, guarda el grupo y genera el archivo completo.';
+  }
+
+  const knockoutNote = document.getElementById('knockoutNote');
+  if (knockoutNote) {
+    knockoutNote.textContent = 'Los dieciseisavos se construyen solos al completar todos los grupos. Luego haz click en el ganador de cada cruce para ir abriendo octavos, cuartos, semis, final y 3er puesto.';
+  }
+
+  const groupTitle = document.getElementById('groupStageTitle');
+  if (groupTitle) groupTitle.textContent = '🛠️ Resultados reales: fase de grupos';
+
+  const knockoutTitle = document.getElementById('knockoutTitle');
+  if (knockoutTitle) knockoutTitle.textContent = '🥊 Resultados reales: eliminatorias';
+
+  const submit = document.getElementById('btnSubmit');
+  if (submit) {
+    submit.textContent = '⚽ Actualizar resultados';
+    submit.onclick = openGeneratedResultsModal;
+  }
+
+  loadResultsIntoEditor();
+  renderAll();
+  showToast('Modo administrador');
+}
+
+function setupResultsAdminUnlock() {
+  const title = document.getElementById('siteTitle') || document.querySelector('header h1');
+  if (!title) return;
+
+  let clicks = 0;
+  let timer = null;
+
+  title.addEventListener('click', () => {
+    clicks += 1;
+    clearTimeout(timer);
+    timer = setTimeout(() => { clicks = 0; }, 1600);
+
+    if (clicks >= 5) {
+      clicks = 0;
+      clearTimeout(timer);
+      enterResultsAdminMode();
+    }
+  });
+}
+
+// ---- Master Render ----
+function renderAll() {
+  if (resultsAdminMode) {
+    if (GROUP_NAMES.every(isGroupComplete)) {
+      buildTPAllocation();
+      computeMatchTeams();
+    } else {
+      tpAllocation = {};
+      state.thirdPlace = [];
+      state.matchTeams = {};
+      state.knockoutResults = {};
+    }
+
+    renderGroups();
+    renderThirdPlace();
+    renderBracket();
+    renderAwardSelects();
+    return;
+  }
+
   loadLeaderboard();
 }
 
@@ -3351,22 +4124,22 @@ async function init() {
     });
   });
 
-  document.getElementById('btnReset').addEventListener('click', () => {
-    resetState();
-    computeMatchTeams();
-    renderAll();
-  });
+  // document.getElementById('btnReset').addEventListener('click', () => {
+//   resetState();
+//   computeMatchTeams();
+//   renderAll();
+// });
   const btnScoringHelp = document.getElementById('btnScoringHelp');
   if (btnScoringHelp) {
     btnScoringHelp.addEventListener('click', openScoringHelpModal);
   }
-  document.getElementById('btnSubmit').addEventListener('click', submitPrediction);
-  document.getElementById('confirmNameSubmit').addEventListener('click', confirmSubmitPrediction);
-  document.getElementById('cancelNameSubmit').addEventListener('click', closeNameModal);
-  document.getElementById('playerNameInput').addEventListener('keydown', e => {
-    if (e.key === 'Enter') confirmSubmitPrediction();
-    if (e.key === 'Escape') closeNameModal();
-  });
+  // document.getElementById('btnSubmit').addEventListener('click', submitPrediction);
+// document.getElementById('confirmNameSubmit').addEventListener('click', confirmSubmitPrediction);
+// document.getElementById('cancelNameSubmit').addEventListener('click', closeNameModal);
+// document.getElementById('playerNameInput').addEventListener('keydown', e => {
+//   if (e.key === 'Enter') confirmSubmitPrediction();
+//   if (e.key === 'Escape') closeNameModal();
+// });
 
   document.getElementById('closePredictionModal').addEventListener('click', closePredictionModal);
 
@@ -3382,10 +4155,12 @@ async function init() {
   });
 
 
-  restoreLocalPrediction();
-  fillAwards(state.awards);
-  computeMatchTeams();
-  renderAll();
+  setupResultsAdminUnlock();
+
+  // restoreLocalPrediction();
+// fillAwards(state.awards);
+// computeMatchTeams();
+   renderAll();
 
   document.querySelectorAll('#awardGb1,#awardGb2,#awardGb3,#awardBa1,#awardBa2,#awardBa3').forEach(el => {
     el.addEventListener('input', saveLocalPredictionSoon);
