@@ -40,7 +40,9 @@ const RESULTS = {
       "Sweden__Tunisia": { "home": 5, "away": 1 }
     },
     "G": {},
-    "H": {},
+    "H": {
+      "Spain__Cape Verde": { "home": 0, "away": 0 }
+    },
     "I": {},
     "J": {},
     "K": {},
