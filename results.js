@@ -39,9 +39,13 @@ const RESULTS = {
       "Netherlands__Japan": { "home": 2, "away": 2 },
       "Sweden__Tunisia": { "home": 5, "away": 1 }
     },
-    "G": {},
+    "G": {
+      "Belgium__Egypt": { "home": 1, "away": 1 },
+      "Iran__New Zealand": { "home": 2, "away": 2 }
+    },
     "H": {
-      "Spain__Cape Verde": { "home": 0, "away": 0 }
+      "Spain__Cape Verde": { "home": 0, "away": 0 },
+      "Saudi Arabia__Uruguay": { "home": 1, "away": 1 }
     },
     "I": {},
     "J": {},
