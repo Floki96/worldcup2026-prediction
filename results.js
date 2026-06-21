@@ -31,7 +31,7 @@ const RESULTS = {
       "Brazil__Morocco": { "home": 1, "away": 1 },
       "Haiti__Scotland": { "home": 0, "away": 1 },
       "Scotland__Morocco": { "home": 0, "away": 1 },
-      "Brazil__Haití": { "home": 3, "away": 0 }
+      "Brazil__Haiti": { "home": 3, "away": 0 }
         
     },
     "D": {
