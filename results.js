@@ -54,7 +54,8 @@ const RESULTS = {
     },
     "G": {
       "Belgium__Egypt": { "home": 1, "away": 1 },
-      "Iran__New Zealand": { "home": 2, "away": 2 }
+      "Iran__New Zealand": { "home": 2, "away": 2 },
+      "Belgium__Iran": { "home": 0, "away": 0 }
     },
     "H": {
       "Spain__Cape Verde": { "home": 0, "away": 0 },
